@@ -3,7 +3,7 @@ const Questions = require('../index.js');
 
 describe('Questions', () => {
     it('Should have four questions', () => {
-        expect(Questions.length).toBe(1)
+        expect(Questions.length).toBe(4)
     });
 
     it('Text Questions Contains up to 3 characters', () => {
@@ -14,6 +14,6 @@ describe('Questions', () => {
 
     it('Shape Question contains 4 options', () => {
         const shapeQuestions = Questions.find(q => q.name === 'shape');
-        expect(shapeQuestions.choices).toEqual(['cicrle', 'triangle', 'square']);
+        expect(shapeQuestions.choices).toEqual(['Circle', 'Triangle', 'Square']);
     })
 });
